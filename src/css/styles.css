@@ -4,6 +4,10 @@
   margin: 0;
 }
 
+h2 {
+  margin-bottom: 20px;
+}
+
 #hero {
   background-color: forestgreen;
   color: white;
@@ -15,4 +19,19 @@
 
 .section {
   padding: 30px;
+}
+
+#results {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: auto;
+}
+#results img {
+  width: 100%;
+}
+#results .profile-pic {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
 }

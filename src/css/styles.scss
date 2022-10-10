@@ -7,6 +7,12 @@ $medium-padding: 30px;
     margin: 0;
 }
 
+// typography
+
+h2 {
+    margin-bottom: 20px;
+}
+
 #hero {
     background-color: $darkgreen;
     color: white;
@@ -19,4 +25,24 @@ $medium-padding: 30px;
 
 .section {
     padding: $medium-padding;
+}
+
+// image gallery
+
+#results {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: auto;
+
+
+    img {
+        width: 100%;
+    }
+
+    .profile-pic {
+        width: 40px;
+        height: 40px;
+        border-radius: 100%;
+    }
 }
