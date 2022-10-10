@@ -1,0 +1,22 @@
+$darkgreen: forestgreen;
+$medium-padding: 30px;
+
+* {
+    font-family: "Courier", sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+#hero {
+    background-color: $darkgreen;
+    color: white;
+    padding: $medium-padding;
+
+    h1 {
+        margin-bottom: 20px;
+    }
+}
+
+.section {
+    padding: $medium-padding;
+}
