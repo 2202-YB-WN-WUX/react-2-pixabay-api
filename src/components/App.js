@@ -1,17 +1,25 @@
 import './../css/styles.css';
 // import components
-import Hero from './Hero'
-import ImageGallery from './ImageGallery'
 import Navbar from './Navbar'
+import Footer from './Footer'
+// import pages
+import Home from './../pages/Home'
+import About from './../pages/About'
+
+// add router
+import { BrowserRouter, Routes, Route } from "react-router-dom"
 
 const App = () => {
 
   return (
-    <>
+    <BrowserRouter>
       <Navbar />
-      <Hero />
-      <ImageGallery />
-    </>
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/about' element={<About />} />
+      </Routes>
+      <Footer />
+    </BrowserRouter>
   );
 }
 

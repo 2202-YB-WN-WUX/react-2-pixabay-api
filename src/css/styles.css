@@ -108,6 +108,11 @@ h2 {
   border: 0;
 }
 
+#footer {
+  background-color: peachpuff;
+  padding: 30px;
+}
+
 @media screen and (min-width: 420px) {
   #results {
     grid-template-columns: repeat(3, 1fr);
